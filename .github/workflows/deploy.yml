@@ -32,7 +32,7 @@ jobs:
         env:
           DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        working-directory: ./co-fence
+        working-directory: ./youpick
         run:
           ./gradlew bootBuildImage --imageName=${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_REPOSITORY}}
 
