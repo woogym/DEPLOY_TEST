@@ -40,7 +40,7 @@ public class YouTubeService {
         search.setVideoSyndicated(videoPaidProductPlacement);
         search.setType(Collections.singletonList("video"));
         search.setMaxResults(5L);
-        search.setVideoDuration("short");
+        search.setVideoDuration("medium");
 
         SearchListResponse searchListResponse = search.execute();
         List<SearchResult> searchResultList = searchListResponse.getItems();
