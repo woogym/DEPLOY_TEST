@@ -25,7 +25,7 @@ public class YouTubeService {
     private final VideoRepository videoRepository;
     private final RestTemplate restTemplate;
 
-
+    // youtube key 발급
     @Value("${youtube.api.key}")
     private String apiKey;
 
